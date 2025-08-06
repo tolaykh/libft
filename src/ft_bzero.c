@@ -14,7 +14,7 @@ void	bzero(void *s, size_t n)
 {
 	unsigned char	*c;
 
-	c = (unsigned char *)ptr;
+	c = (unsigned char *)s;
 	while (n)
 	{
 		*c++ = '\0';
