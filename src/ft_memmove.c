@@ -17,7 +17,7 @@ void	*memmove(void *dest, const void *src, size_t n)
 
 	w = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	if (!dest && !src)
+	if ((!dest && !src) && n > 0)
 		return (NULL);
 	if (s > w)
 	{
@@ -28,8 +28,8 @@ void	*memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		w = w + n;
-		s = s + n;
+		w = w + n - 1;
+		s = s + n - 1;
 		while (n--)
 		{
 			*w-- = *s--;
