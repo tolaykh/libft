@@ -6,35 +6,34 @@
 /*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 12:36:58 by tkhamis           #+#    #+#             */
-/*   Updated: 2025/08/06 17:56:04 by tkhamis          ###   ########.fr       */
+/*   Updated: 2025/08/06 18:09:21 by tkhamis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memmove(void *dest, const void *src, size_t n)
+void	*memmove(void *dest, const void *src, size_t n)
 {
-        unsigned char   *w;
-        const unsigned char     *s;
+	unsigned char		*w;
+	const unsigned char	*s;
 
-        w = (unsigned char *)dest;
-        s = (const unsigned char *)src;
-        if(!dest && !src)
-                return (NULL);
-        if(s > w)
-        {
-                while (n)
-                {
-                        *w++ = *s++;
-                        n--;
-                }
-        }
-        else
-        {       w = w + n;
-                s = s + n;
-                while (n)
-                {
-                        *w-- = *s--;
-                        n--;
-                }
-        }
-        return (dest);
+	w = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	if (!dest && !src)
+		return (NULL);
+	if (s > w)
+	{
+		while (n--)
+		{
+			*w++ = *s++;
+		}
+	}
+	else
+	{
+		w = w + n;
+		s = s + n;
+		while (n--)
+		{
+			*w-- = *s--;
+		}
+	}
+	return (dest);
 }
