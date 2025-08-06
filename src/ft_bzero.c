@@ -20,5 +20,4 @@ void	bzero(void *s, size_t n)
 		*c++ = '\0';
 		n--;
 	}
-	return (ptr);
 }
