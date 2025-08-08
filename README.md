@@ -4,12 +4,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![42 Project](https://img.shields.io/badge/42-Project-blue)]()
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)]()
 
 ---
 
 ## 👋 About Libft
-Libft is a custom implementation of part of the C standard library created as part of the **42 Network curriculum**.  
+Libft is a custom implementation of part of the C standard library created as part of the **42 Amman curriculum**.  
 It contains:
 - **Reimplemented libc functions** (`memset`, `strlcpy`, `atoi`, …)
 - **Extra string & memory utilities**
