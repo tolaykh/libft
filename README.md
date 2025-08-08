@@ -1,24 +1,40 @@
-# Libft  
+# 📚 Libft
+
 [![Language](https://img.shields.io/badge/language-C-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![42 Project](https://img.shields.io/badge/42-Project-blue)]()
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Static Library](https://img.shields.io/badge/library-static-lightgrey.svg)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)]()
 
-**Libft** is a custom implementation of part of the C standard library.  
-It provides a reusable static library (`libft.a`) containing:
+---
 
+## 👋 About Libft
+Libft is a custom implementation of part of the C standard library created as part of the **42 Network curriculum**.  
+It contains:
 - **Reimplemented libc functions** (`memset`, `strlcpy`, `atoi`, …)
 - **Extra string & memory utilities**
 - **Linked list API** *(bonus)*
 
-**Skills practiced:**  
-`C` · memory management · pointers · data structures · static libraries
+---
+
+## 🛠 Languages & Tools
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50"/>
+</p>
 
 ---
 
-## 📦 Build & Use
-
-**1️⃣ Compile the library**
+## 🚀 Build & Use
 ```bash
+# 1️⃣ Compile the library
 make
+
+# 2️⃣ Compile your program with Libft
+gcc main.c -L. -lft
+
+# 3️⃣ Run your program
+./a.out
