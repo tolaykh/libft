@@ -4,7 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![42 Project](https://img.shields.io/badge/42-Project-blue)]()
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)]()
 
 ---
 
