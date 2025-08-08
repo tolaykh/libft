@@ -4,16 +4,24 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![42 Project](https://img.shields.io/badge/42-Project-blue)]()
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)]()
 
 ---
 
-## 👋 About Libft
-Libft is a custom implementation of part of the C standard library created as part of the **42 Amman curriculum**.  
-It contains:
-- **Reimplemented libc functions** (`memset`, `strlcpy`, `atoi`, …)
-- **Extra string & memory utilities**
-- **Linked list API** *(bonus)*
+## 👋 About This Project
+**Libft** is my first big C project at **42Amman**.  
+It’s a custom implementation of functions from the standard C library — and more.  
+The goal is to create my **own library** that I can reuse in future projects.
 
+I built this to:
+- **Understand how core C functions work under the hood**
+- **Improve my skills with pointers, memory management, and data structures**
+- **Learn how to build and use static libraries (`.a` files)**
+
+**What’s inside?**
+- Reimplemented C standard functions (`memset`, `strlcpy`, `atoi`, …)
+- Extra utilities for strings and memory
+- A bonus linked list API
 ---
 
 ## 🛠 Languages & Tools
@@ -31,6 +39,13 @@ It contains:
 ```bash
 # 1️⃣ Compile the library
 make
+
+# 2️⃣ Compile your program with Libft
+gcc main.c -L. -lft
+
+# 3️⃣ Run your program
+./a.out
+
 
 # 2️⃣ Compile your program with Libft
 gcc main.c -L. -lft
