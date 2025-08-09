@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*w;
 	const unsigned char	*s;
 
 	w = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-	if ((!dest && !src) && n > 0)
+	if (!dest && !src)
 		return (NULL);
 	if (s > w)
 	{
@@ -28,8 +28,8 @@ void	*memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		w = w + n - 1;
-		s = s + n - 1;
+		w = w + n;
+		s = s + n;
 		while (n--)
 		{
 			*w-- = *s--;
