@@ -22,7 +22,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 	return (ptr);
 }
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t total_size = nmemb * size;
 	void	*ptr = malloc(size);
