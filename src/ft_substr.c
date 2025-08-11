@@ -1,38 +1,53 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/11 15:12:51 by tkhamis           #+#    #+#             */
+/*   Updated: 2025/08/11 15:13:45 by tkhamis          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+char	*ftl(char const *s, size_t cpy_len, size_t len, int start)
 {
-	size_t	len;
+	size_t	i;
+	char	*substr;
 
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
-char *ft_substr(char const *s, unsigned int start, size_t len)
-{
-	size_t i = 0;
-	if(start >= ft_strlen(s))
-	{
-		char *e = malloc(1);
-		if(!e)
-			return NULL;
-		e[0] = '\0';
-		return (e);
-	}
-	size_t cpy_len = (ft_strlen(s)) - (size_t)start;
-	if(cpy_len > len)
+	i = 0;
+	if (cpy_len > len)
 		cpy_len = len;
-	char *substr = malloc(cpy_len + 1);
+	substr = malloc(cpy_len + 1);
 	if (!substr)
-		return NULL;
-
-	while(i < cpy_len)
+		return (NULL);
+	while (i < cpy_len)
 	{
-	substr[i] = s[(size_t)start + i];
-	i++;
+		substr[i] = s[(size_t)start + i];
+		i++;
 	}
 	substr[i] = '\0';
 	return (substr);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*e;
+	size_t	cpy_len;
+	char	*sbs;
+
+	if (start >= ft_strlen(s))
+	{
+		e = malloc(1);
+		if (!e)
+			return (NULL);
+		e[0] = '\0';
+		return (e);
+	}
+	cpy_len = (ft_strlen(s)) - (size_t)start;
+	sbs = ftl(s, cpy_len, len, start);
+	return (sbs);
 }
