@@ -3,7 +3,6 @@
 [![Language](https://img.shields.io/badge/language-C-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![42 Project](https://img.shields.io/badge/42-Project-blue)]()
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
 ---
 
