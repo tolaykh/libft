@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tkhamis <tkhamis@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 13:44:11 by tkhamis           #+#    #+#             */
-/*   Updated: 2025/08/15 16:12:26 by tkhamis          ###   ########.fr       */
+/*   Updated: 2025/08/17 17:43:30 by tkhamis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_digits(int n)
+static int	count_digits(int n)
 {
 	int	count;
 
@@ -25,14 +25,14 @@ int	count_digits(int n)
 	return (count);
 }
 
-int	calc_total_len(int count, int is_negative)
+static int	calc_total_len(int count, int is_negative)
 {
 	if (is_negative)
 		return (count + 1);
 	return (count);
 }
 
-char	*fill(int n, int total_len, int is_negative)
+static char	*fill(int n, int total_len, int is_negative)
 {
 	char	*str;
 	int		index;

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tkhamis <tkhamis@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 15:12:51 by tkhamis           #+#    #+#             */
-/*   Updated: 2025/08/11 15:13:45 by tkhamis          ###   ########.fr       */
+/*   Updated: 2025/08/17 17:41:41 by tkhamis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ftl(char const *s, size_t cpy_len, size_t len, int start)
+static char	*ftl(char const *s, size_t cpy_len, size_t len, int start)
 {
 	size_t	i;
 	char	*substr;

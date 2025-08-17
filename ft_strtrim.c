@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tkhamis <tkhamis@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 15:53:39 by tkhamis           #+#    #+#             */
-/*   Updated: 2025/08/15 12:59:52 by tkhamis          ###   ########.fr       */
+/*   Updated: 2025/08/17 17:41:28 by tkhamis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-size_t	get_start(char const *s1, char const *set)
+static size_t	get_start(char const *s1, char const *set)
 {
 	size_t	i;
 
@@ -26,7 +26,7 @@ size_t	get_start(char const *s1, char const *set)
 	return (i);
 }
 
-size_t	get_end(char const *s1, char const *set, size_t start)
+static size_t	get_end(char const *s1, char const *set, size_t start)
 {
 	size_t	end;
 

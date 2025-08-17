@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkhamis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tkhamis <tkhamis@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 14:00:38 by tkhamis           #+#    #+#             */
-/*   Updated: 2025/08/15 17:27:39 by tkhamis          ###   ########.fr       */
+/*   Updated: 2025/08/17 14:37:10 by tkhamis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 #include <limits.h>
+#include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -21,14 +21,17 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb == 0 || size == 0)
 	{
-		nmemb = 1;
-		size = 1;
+		ptr = malloc(1);
+		if (!ptr)
+			return (NULL);
+		return (ptr);
 	}
 	total_size = nmemb * size;
 	ptr = malloc(total_size);
-	if (ptr != NULL)
+	if (!ptr)
 	{
-		ft_bzero(ptr, total_size);
+		return (NULL);
 	}
+	ft_bzero(ptr, total_size);
 	return (ptr);
 }
