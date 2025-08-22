@@ -39,7 +39,7 @@ I built this to:
 make
 
 # 2️⃣ Compile your program with Libft
-gcc main.c -L. -lft
+cc main.c -L. -lft
 
 # 3️⃣ Run your program
 ./a.out
