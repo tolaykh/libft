@@ -107,8 +107,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (res);
 }
-
-int main()
+/*int main()
 {
 	char **t;
 	t = ft_split("hello world 42 amman",' ');
@@ -122,4 +121,4 @@ int main()
 	}
 	free(t);
 	return (0);
-}
+}*/
