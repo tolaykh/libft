@@ -1,9 +1,10 @@
-# 📚 Libft
+<h1 align="center"> 📚 Libft </h1>
 
-[![Language](https://img.shields.io/badge/language-C-blue.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
-[![42 Project](https://img.shields.io/badge/42-Project-blue)]()
-
+<p align="center">
+  <img src="https://img.shields.io/badge/42-Project-blue" />
+  <img src="https://img.shields.io/badge/Language-C-green" />
+  <img src="https://img.shields.io/badge/Status-Completed-success" />
+</p>
 ---
 
 ## 👋 About This Project
